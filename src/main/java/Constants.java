@@ -1,5 +1,5 @@
 class Constants {
-    private static final String API = "https://api.cr-api.com";
+    private static final String API = "http://api.cr-api.com";
     static final String APIPROFILE = API +"/profile/";
     static final String APICLAN = API +"/clan/";
 

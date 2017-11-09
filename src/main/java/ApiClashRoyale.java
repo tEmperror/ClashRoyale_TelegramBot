@@ -6,7 +6,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
 import java.net.URL;
 
 class ApiClashRoyale {
@@ -17,18 +16,15 @@ class ApiClashRoyale {
     }
 
     private static String getJsonString(String link) throws IOException {
-        URL url = new URL(link);
-
-        HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
-        urlConnection.setRequestMethod("GET");
-        urlConnection.connect();
+        System.setProperty("http.agent", "Chrome");
 
         InputStream inputStream;
         try {
-            inputStream = urlConnection.getInputStream();
+            inputStream = new URL(link).openStream();
         } catch (IOException e) {
             return Constants.INVALIDTAG;
         }
+
         BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
 
         StringBuilder stringBuffer = new StringBuilder();

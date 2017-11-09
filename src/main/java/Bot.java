@@ -95,7 +95,7 @@ public class Bot extends TelegramLongPollingBot{
         else if (message.getText().contains("Профиль")) {
             try {
                 sendKeyboard(message, ApiClashRoyale.getProfile(userTag), keyboard);
-            } catch (Exception e) {
+            } catch (IOException e) {
                 sendMsg(message, "Введите TAG в формате #...");
             }
         }
