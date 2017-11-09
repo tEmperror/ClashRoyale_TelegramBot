@@ -1,3 +1,9 @@
+import Metrika.Botan;
+import Metrika.BotanConfig;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.http.impl.nio.client.CloseableHttpAsyncClient;
+import org.apache.http.impl.nio.client.HttpAsyncClients;
 import org.telegram.telegrambots.ApiContextInitializer;
 import org.telegram.telegrambots.TelegramBotsApi;
 import org.telegram.telegrambots.api.methods.send.SendMessage;
@@ -19,6 +25,9 @@ public class Bot extends TelegramLongPollingBot{
 
     private static Map<Long, String> users = new HashMap<>();
     private static ReplyKeyboardMarkup keyboard;
+
+    private static CloseableHttpAsyncClient client = HttpAsyncClients.createDefault();
+    private static Botan botan;
 
     static {
         keyboard = new ReplyKeyboardMarkup().setResizeKeyboard(true);
@@ -44,6 +53,11 @@ public class Bot extends TelegramLongPollingBot{
         keyboard.setKeyboard(rows);
     }
 
+    static {
+        client.start();
+        botan = new Botan(client, new ObjectMapper());
+    }
+
     public static void main(String[] args) {
         ApiContextInitializer.init();
         TelegramBotsApi api = new TelegramBotsApi();
@@ -59,8 +73,11 @@ public class Bot extends TelegramLongPollingBot{
     public void onUpdateReceived(Update update) {
         Message message = update.getMessage();
         String userTag = users.getOrDefault(message.getChatId(), "");
+        String userName = message.getFrom().getUserName();
 
         if (message.getText().equals("/start")) {
+            botan.track(BotanConfig.APIKEY, userName, message, "Start");
+
             String msg = "Привет! Я - Clash Royale Bot " + EmojiCode.getEmoji("robot_face") + "\n\n"
                     + "Я легко могу показать тебе:\n"
                     + "-Общую статистику профиля " + EmojiCode.getEmoji("scroll") + "\n"
@@ -73,6 +90,8 @@ public class Bot extends TelegramLongPollingBot{
             sendMsg(message,msg);
         }
         else if (message.getText().contains("#")) {
+            botan.track(BotanConfig.APIKEY, userName, message, "Edit TAG");
+
             userTag = message.getText().substring(1);
             try {
                 if (ApiClashRoyale.connection(userTag)) {
@@ -86,6 +105,8 @@ public class Bot extends TelegramLongPollingBot{
             }
         }
         else if (message.getText().contains("Помощь") || message.getText().contains("/help")) {
+            botan.track(BotanConfig.APIKEY, userName, message, "Help");
+
             String msg = ("Clash Royale Bot\n"
                     + "Версия 1.0\n\n"
                     + "/start - начать работу с ботом\n\n"
@@ -93,6 +114,8 @@ public class Bot extends TelegramLongPollingBot{
             sendKeyboard(message, msg, keyboard);
         }
         else if (message.getText().contains("Профиль")) {
+            botan.track(BotanConfig.APIKEY, userName, message, "Profile");
+
             try {
                 sendKeyboard(message, ApiClashRoyale.getProfile(userTag), keyboard);
             } catch (IOException e) {
@@ -100,6 +123,8 @@ public class Bot extends TelegramLongPollingBot{
             }
         }
         else if (message.getText().contains("Трофеи")) {
+            botan.track(BotanConfig.APIKEY, userName, message, "Trophies");
+
             try {
                 sendKeyboard(message, ApiClashRoyale.getTrophies(userTag), keyboard);
             } catch (Exception e) {
@@ -107,6 +132,8 @@ public class Bot extends TelegramLongPollingBot{
             }
         }
         else if (message.getText().contains("Бои")) {
+            botan.track(BotanConfig.APIKEY, userName, message, "Battles");
+
             try {
                 sendKeyboard(message, ApiClashRoyale.getBattles(userTag), keyboard);
             } catch (Exception e) {
@@ -114,6 +141,8 @@ public class Bot extends TelegramLongPollingBot{
             }
         }
         else if (message.getText().contains("Сундуки")) {
+            botan.track(BotanConfig.APIKEY, userName, message, "Chests");
+
             try {
                 sendKeyboard(message, ApiClashRoyale.getChests(userTag), keyboard);
             } catch (Exception e) {
@@ -121,6 +150,8 @@ public class Bot extends TelegramLongPollingBot{
             }
         }
         else if (message.getText().contains("Сезон")) {
+            botan.track(BotanConfig.APIKEY, userName, message, "Season");
+
             try {
                 sendKeyboard(message, ApiClashRoyale.getSeason(userTag), keyboard);
             } catch (Exception e) {
@@ -128,6 +159,8 @@ public class Bot extends TelegramLongPollingBot{
             }
         }
         else if (message.getText().contains("Клан")) {
+            botan.track(BotanConfig.APIKEY, userName, message, "Clan");
+
             try {
                 sendKeyboard(message, ApiClashRoyale.getClan(userTag), keyboard);
             } catch (Exception e) {
@@ -135,7 +168,6 @@ public class Bot extends TelegramLongPollingBot{
             }
         }
         else sendMsg(message, "Я не знаю такой команды " + EmojiCode.getEmoji("disappointed"));
-
     }
 
     @SuppressWarnings("deprecation")
