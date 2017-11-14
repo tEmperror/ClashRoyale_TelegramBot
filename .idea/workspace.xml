@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="390c6faa-59a5-4b00-966a-f36d1d2c3be3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ApiClashRoyale.java" afterPath="$PROJECT_DIR$/src/main/java/ApiClashRoyale.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Bot.java" afterPath="$PROJECT_DIR$/src/main/java/Bot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/EmojiCode.java" afterPath="$PROJECT_DIR$/src/main/java/EmojiCode.java" />
-    </list>
+    <list default="true" id="390c6faa-59a5-4b00-966a-f36d1d2c3be3" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -324,12 +318,12 @@
       <workItem from="1510240471248" duration="405000" />
       <workItem from="1510241146652" duration="2621000" />
       <workItem from="1510253385143" duration="4113000" />
-      <workItem from="1510653650177" duration="3625000" />
+      <workItem from="1510653650177" duration="4120000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55025000" />
+    <option name="totallyTimeSpent" value="55520000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
