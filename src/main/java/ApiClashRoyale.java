@@ -10,11 +10,13 @@ import java.net.URL;
 
 class ApiClashRoyale {
 
+    // Проверка соединения
     static boolean connection(String tag) throws IOException {
         String link = Constants.APIPROFILE + tag;
         return !getJsonString(link).equals(Constants.INVALIDTAG);
     }
 
+    // Возвращает JSON в формате String по URL
     private static String getJsonString(String link) throws IOException {
         System.setProperty("http.agent", "Chrome");
 
@@ -38,6 +40,7 @@ class ApiClashRoyale {
         return new String(bytes, "UTF-8");
     }
 
+    // Возвращает информацию о профиле пользователя
     static String getProfile(String tag) throws IOException {
         StringBuilder result = new StringBuilder();
         JSONObject profile = new JSONObject(getJsonString(Constants.APIPROFILE + tag));
@@ -80,6 +83,7 @@ class ApiClashRoyale {
         return result.toString();
     }
 
+    // Возвращает информацию о трофеях пользователя
     static String getTrophies(String tag) throws IOException {
         StringBuilder result = new StringBuilder();
         JSONObject profile = new JSONObject(getJsonString(Constants.APIPROFILE + tag));
@@ -96,6 +100,7 @@ class ApiClashRoyale {
         return result.toString();
     }
 
+    // Возвращает информацию о боях пользователя
     static String getBattles(String tag) throws IOException {
         StringBuilder result = new StringBuilder();
         JSONObject profile = new JSONObject(getJsonString(Constants.APIPROFILE + tag));
@@ -116,6 +121,7 @@ class ApiClashRoyale {
         return result.toString();
     }
 
+    // Возвращает информацию о сундуках пользователя
     static String getChests(String tag) throws IOException {
         StringBuilder result = new StringBuilder();
         JSONObject profile = new JSONObject(getJsonString(Constants.APIPROFILE + tag));
@@ -136,6 +142,7 @@ class ApiClashRoyale {
         return result.toString();
     }
 
+    // Возвращает информацию о прошлом сезоне
     static String getSeason(String tag) throws IOException {
         StringBuilder result = new StringBuilder();
         JSONObject profile = new JSONObject(getJsonString(Constants.APIPROFILE + tag));
@@ -155,6 +162,7 @@ class ApiClashRoyale {
         return result.toString();
     }
 
+    // Возвращает информацию о клане
     static String getClan(String tag) throws IOException {
         StringBuilder result = new StringBuilder();
         JSONObject profile = new JSONObject(getJsonString(Constants.APIPROFILE + tag));

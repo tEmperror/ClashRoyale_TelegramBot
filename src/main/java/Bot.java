@@ -29,6 +29,7 @@ public class Bot extends TelegramLongPollingBot{
     private static CloseableHttpAsyncClient client = HttpAsyncClients.createDefault();
     private static Botan botan;
 
+    // Инициализация клавиатуры
     static {
         keyboard = new ReplyKeyboardMarkup().setResizeKeyboard(true);
         List<KeyboardRow> rows = new ArrayList<>();
@@ -53,11 +54,16 @@ public class Bot extends TelegramLongPollingBot{
         keyboard.setKeyboard(rows);
     }
 
+    // Запуск метрики
     static {
         client.start();
         botan = new Botan(client, new ObjectMapper());
     }
 
+    /**
+     * Инициализация API
+     * Регистрация бота
+     */
     public static void main(String[] args) {
         ApiContextInitializer.init();
         TelegramBotsApi api = new TelegramBotsApi();
@@ -70,6 +76,11 @@ public class Bot extends TelegramLongPollingBot{
         }
     }
 
+    /**
+     * Чтение входящего запроса
+     * Генерация ответа
+     * @param update
+     */
     public void onUpdateReceived(Update update) {
         Message message = update.getMessage();
         String userTag = users.getOrDefault(message.getChatId(), "");
@@ -170,6 +181,11 @@ public class Bot extends TelegramLongPollingBot{
         else sendMsg(message, "Я не знаю такой команды " + EmojiCode.getEmoji("disappointed"));
     }
 
+    /**
+     * Отправление текстового сообщения
+     * @param message
+     * @param text
+     */
     @SuppressWarnings("deprecation")
     private void sendMsg(Message message, String text) {
         SendMessage s = new SendMessage();
@@ -182,6 +198,12 @@ public class Bot extends TelegramLongPollingBot{
         }
     }
 
+    /**
+     * Отправление текстового сообщения и клавиатуры
+     * @param message
+     * @param text
+     * @param keyboard
+     */
     @SuppressWarnings("deprecation")
     private void sendKeyboard(Message message,String text, ReplyKeyboardMarkup keyboard) {
         SendMessage s = new SendMessage();
@@ -195,10 +217,16 @@ public class Bot extends TelegramLongPollingBot{
         }
     }
 
+    /**
+     * @return Имя Бота
+     */
     public String getBotUsername() {
         return BotConfig.USERNAME;
     }
 
+    /**
+     * @return Токен Бота
+     */
     public String getBotToken() {
         return BotConfig.TOKEN;
     }

@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="390c6faa-59a5-4b00-966a-f36d1d2c3be3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpasyncclient_4_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_nio_4_4_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Metrika/Botan.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Metrika/BotanConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Metrika/BotanException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/NeSt_445.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/NeSt_445.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClashRoyaleBot.iml" afterPath="$PROJECT_DIR$/ClashRoyaleBot.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ApiClashRoyale.java" afterPath="$PROJECT_DIR$/src/main/java/ApiClashRoyale.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Bot.java" afterPath="$PROJECT_DIR$/src/main/java/Bot.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/EmojiCode.java" afterPath="$PROJECT_DIR$/src/main/java/EmojiCode.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,35 +29,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Bot.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Bot.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="75" column="58" lean-forward="true" selection-start-line="75" selection-start-column="58" selection-end-line="75" selection-end-column="58" />
-              <folding>
-                <element signature="initializer##0;class#Bot#0" expanded="false" />
-                <element signature="initializer##1;class#Bot#0" expanded="false" />
-                <element signature="method#main#0;class#Bot#0" expanded="false" />
-                <element signature="method#sendMsg#0;class#Bot#0" expanded="false" />
-                <element signature="method#sendKeyboard#0;class#Bot#0" expanded="false" />
-                <element signature="e#7851#7852#0" expanded="true" />
-                <element signature="e#7892#7893#0" expanded="true" />
-                <marker date="1510257272346" expanded="false" signature="2822:3739" ph="{...}" />
-                <marker date="1510257272346" expanded="false" signature="3790:4358" ph="{...}" />
-                <marker date="1510257272346" expanded="false" signature="4453:4814" ph="{...}" />
-                <marker date="1510257272346" expanded="false" signature="4871:5177" ph="{...}" />
-                <marker date="1510257272346" expanded="false" signature="5233:5539" ph="{...}" />
-                <marker date="1510257272346" expanded="false" signature="5592:5896" ph="{...}" />
-                <marker date="1510257272346" expanded="false" signature="5953:6255" ph="{...}" />
-                <marker date="1510257272346" expanded="false" signature="6310:6612" ph="{...}" />
-                <marker date="1510257272346" expanded="false" signature="6666:6964" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -88,16 +55,17 @@
         <option value="$MAVEN_REPOSITORY$/org/telegram/telegrambots-meta/3.4/telegrambots-meta-3.4.jar!/org/telegram/telegrambots/generics/LongPollingBot.class" />
         <option value="$PROJECT_DIR$/src/main/java/apiClashRoyale.java" />
         <option value="$PROJECT_DIR$/src/main/java/getEmoji.java" />
-        <option value="$PROJECT_DIR$/src/main/java/EmojiCode.java" />
         <option value="$PROJECT_DIR$/src/main/java/BotConfig.java" />
         <option value="$PROJECT_DIR$/ClashRoyaleBot.iml" />
         <option value="$PROJECT_DIR$/src/main/java/Constants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ApiClashRoyale.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Metrika/BotanConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/Metrika/Botan.java" />
         <option value="$PROJECT_DIR$/src/main/java/Metrika/BotanException.java" />
         <option value="$PROJECT_DIR$/src/main/java/Bot.java" />
+        <option value="$PROJECT_DIR$/src/main/java/EmojiCode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ApiClashRoyale.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -120,7 +88,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="697" />
     <option name="height" value="775" />
@@ -149,39 +117,21 @@
               <item name="ClashRoyaleBot" type="b2602c69:ProjectViewProjectNode" />
               <item name="ClashRoyaleBot" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ClashRoyaleBot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ClashRoyaleBot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ClashRoyaleBot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ClashRoyaleBot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ClashRoyaleBot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ClashRoyaleBot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL&#10;PostgreSQL" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
@@ -374,18 +324,18 @@
       <workItem from="1510240471248" duration="405000" />
       <workItem from="1510241146652" duration="2621000" />
       <workItem from="1510253385143" duration="4113000" />
+      <workItem from="1510653650177" duration="3625000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51400000" />
+    <option name="totallyTimeSpent" value="55025000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -397,7 +347,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16325037" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16325037" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19742814" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -410,6 +360,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -418,16 +369,51 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.gitignore" />
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="11" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="initializer##0;class#Bot#0" expanded="false" />
+            <element signature="initializer##1;class#Bot#0" expanded="false" />
+            <element signature="docComment;method#main#0;class#Bot#0" expanded="false" />
+            <element signature="method#main#0;class#Bot#0" expanded="false" />
+            <element signature="docComment;method#onUpdateReceived#0;class#Bot#0" expanded="false" />
+            <element signature="method#onUpdateReceived#0;class#Bot#0" expanded="false" />
+            <element signature="docComment;method#sendMsg#0;class#Bot#0" expanded="false" />
+            <element signature="e#7381#7413#0" expanded="true" />
+            <element signature="method#sendMsg#0;class#Bot#0" expanded="false" />
+            <element signature="docComment;method#sendKeyboard#0;class#Bot#0" expanded="false" />
+            <element signature="e#7853#7885#0" expanded="true" />
+            <element signature="method#sendKeyboard#0;class#Bot#0" expanded="false" />
+            <element signature="docComment;method#getBotUsername#0;class#Bot#0" expanded="false" />
+            <element signature="docComment;method#getBotToken#0;class#Bot#0" expanded="false" />
+            <marker date="1510655707882" expanded="false" signature="3034:3951" ph="{...}" />
+            <marker date="1510655707882" expanded="false" signature="4002:4570" ph="{...}" />
+            <marker date="1510655707882" expanded="false" signature="4665:5026" ph="{...}" />
+            <marker date="1510655707882" expanded="false" signature="5083:5389" ph="{...}" />
+            <marker date="1510655707882" expanded="false" signature="5445:5751" ph="{...}" />
+            <marker date="1510655707882" expanded="false" signature="5804:6108" ph="{...}" />
+            <marker date="1510655707882" expanded="false" signature="6165:6467" ph="{...}" />
+            <marker date="1510655707882" expanded="false" signature="6522:6824" ph="{...}" />
+            <marker date="1510655707882" expanded="false" signature="6878:7176" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -435,7 +421,6 @@
           <folding>
             <element signature="n#properties#0;n#project#0;n#!!top" expanded="false" />
             <element signature="n#build#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependencies#0;n#project#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -447,20 +432,27 @@
           <folding>
             <element signature="initializer##0;class#Bot#0" expanded="false" />
             <element signature="initializer##1;class#Bot#0" expanded="false" />
+            <element signature="docComment;method#main#0;class#Bot#0" expanded="false" />
             <element signature="method#main#0;class#Bot#0" expanded="false" />
+            <element signature="docComment;method#onUpdateReceived#0;class#Bot#0" expanded="false" />
+            <element signature="method#onUpdateReceived#0;class#Bot#0" expanded="false" />
+            <element signature="docComment;method#sendMsg#0;class#Bot#0" expanded="false" />
+            <element signature="e#7381#7413#0" expanded="true" />
             <element signature="method#sendMsg#0;class#Bot#0" expanded="false" />
+            <element signature="docComment;method#sendKeyboard#0;class#Bot#0" expanded="false" />
+            <element signature="e#7853#7885#0" expanded="true" />
             <element signature="method#sendKeyboard#0;class#Bot#0" expanded="false" />
-            <element signature="e#7851#7852#0" expanded="true" />
-            <element signature="e#7892#7893#0" expanded="true" />
-            <marker date="1510257272346" expanded="false" signature="2822:3739" ph="{...}" />
-            <marker date="1510257272346" expanded="false" signature="3790:4358" ph="{...}" />
-            <marker date="1510257272346" expanded="false" signature="4453:4814" ph="{...}" />
-            <marker date="1510257272346" expanded="false" signature="4871:5177" ph="{...}" />
-            <marker date="1510257272346" expanded="false" signature="5233:5539" ph="{...}" />
-            <marker date="1510257272346" expanded="false" signature="5592:5896" ph="{...}" />
-            <marker date="1510257272346" expanded="false" signature="5953:6255" ph="{...}" />
-            <marker date="1510257272346" expanded="false" signature="6310:6612" ph="{...}" />
-            <marker date="1510257272346" expanded="false" signature="6666:6964" ph="{...}" />
+            <element signature="docComment;method#getBotUsername#0;class#Bot#0" expanded="false" />
+            <element signature="docComment;method#getBotToken#0;class#Bot#0" expanded="false" />
+            <marker date="1510655707882" expanded="false" signature="3034:3951" ph="{...}" />
+            <marker date="1510655707882" expanded="false" signature="4002:4570" ph="{...}" />
+            <marker date="1510655707882" expanded="false" signature="4665:5026" ph="{...}" />
+            <marker date="1510655707882" expanded="false" signature="5083:5389" ph="{...}" />
+            <marker date="1510655707882" expanded="false" signature="5445:5751" ph="{...}" />
+            <marker date="1510655707882" expanded="false" signature="5804:6108" ph="{...}" />
+            <marker date="1510655707882" expanded="false" signature="6165:6467" ph="{...}" />
+            <marker date="1510655707882" expanded="false" signature="6522:6824" ph="{...}" />
+            <marker date="1510655707882" expanded="false" signature="6878:7176" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -472,7 +464,6 @@
           <folding>
             <element signature="n#properties#0;n#project#0;n#!!top" expanded="false" />
             <element signature="n#build#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependencies#0;n#project#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -491,7 +482,6 @@
           <folding>
             <element signature="n#properties#0;n#project#0;n#!!top" expanded="false" />
             <element signature="n#build#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependencies#0;n#project#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -532,10 +522,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/telegram/telegrambots/3.4/telegrambots-3.4.jar!/org/telegram/telegrambots/ApiContextInitializer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/telegram/telegrambots/3.4/telegrambots-3.4.jar!/org/telegram/telegrambots/bots/TelegramLongPollingBot.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="23" column="22" lean-forward="false" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="231" column="5" lean-forward="true" selection-start-line="231" selection-start-column="5" selection-end-line="231" selection-end-column="5" />
+          <folding>
+            <element signature="initializer##0;class#Bot#0" expanded="false" />
+            <element signature="initializer##1;class#Bot#0" expanded="false" />
+            <element signature="docComment;method#main#0;class#Bot#0" expanded="false" />
+            <element signature="method#main#0;class#Bot#0" expanded="false" />
+            <element signature="docComment;method#onUpdateReceived#0;class#Bot#0" expanded="false" />
+            <element signature="method#onUpdateReceived#0;class#Bot#0" expanded="false" />
+            <element signature="docComment;method#sendMsg#0;class#Bot#0" expanded="false" />
+            <element signature="e#7381#7413#0" expanded="true" />
+            <element signature="method#sendMsg#0;class#Bot#0" expanded="false" />
+            <element signature="docComment;method#sendKeyboard#0;class#Bot#0" expanded="false" />
+            <element signature="e#7853#7885#0" expanded="true" />
+            <element signature="method#sendKeyboard#0;class#Bot#0" expanded="false" />
+            <element signature="docComment;method#getBotUsername#0;class#Bot#0" expanded="false" />
+            <element signature="docComment;method#getBotToken#0;class#Bot#0" expanded="false" />
+            <marker date="1510655707882" expanded="false" signature="3034:3951" ph="{...}" />
+            <marker date="1510655707882" expanded="false" signature="4002:4570" ph="{...}" />
+            <marker date="1510655707882" expanded="false" signature="4665:5026" ph="{...}" />
+            <marker date="1510655707882" expanded="false" signature="5083:5389" ph="{...}" />
+            <marker date="1510655707882" expanded="false" signature="5445:5751" ph="{...}" />
+            <marker date="1510655707882" expanded="false" signature="5804:6108" ph="{...}" />
+            <marker date="1510655707882" expanded="false" signature="6165:6467" ph="{...}" />
+            <marker date="1510655707882" expanded="false" signature="6522:6824" ph="{...}" />
+            <marker date="1510655707882" expanded="false" signature="6878:7176" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/EmojiCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding>
+            <element signature="docComment;method#getEmoji#0;class#EmojiCode#0" expanded="false" />
+            <element signature="e#172#173#0" expanded="false" />
+            <element signature="e#239#240#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="43" lean-forward="false" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ApiClashRoyale.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        <state relative-caret-position="520">
+          <caret line="192" column="5" lean-forward="true" selection-start-line="192" selection-start-column="5" selection-end-line="192" selection-end-column="5" />
           <folding>
             <element signature="method#connection#0;class#ApiClashRoyale#0" expanded="false" />
             <element signature="method#getJsonString#0;class#ApiClashRoyale#0" expanded="false" />
@@ -549,34 +607,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BotConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Metrika/Botan.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="43" lean-forward="false" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/EmojiCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Metrika/BotanException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="143">
+          <caret line="28" column="3" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -589,38 +623,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Metrika/Botan.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Metrika/BotanException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="48" column="13" lean-forward="true" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="160">
+          <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Bot.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/BotConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="75" column="58" lean-forward="true" selection-start-line="75" selection-start-column="58" selection-end-line="75" selection-end-column="58" />
-          <folding>
-            <element signature="initializer##0;class#Bot#0" expanded="false" />
-            <element signature="initializer##1;class#Bot#0" expanded="false" />
-            <element signature="method#main#0;class#Bot#0" expanded="false" />
-            <element signature="method#sendMsg#0;class#Bot#0" expanded="false" />
-            <element signature="method#sendKeyboard#0;class#Bot#0" expanded="false" />
-            <element signature="e#7851#7852#0" expanded="true" />
-            <element signature="e#7892#7893#0" expanded="true" />
-            <marker date="1510257272346" expanded="false" signature="2822:3739" ph="{...}" />
-            <marker date="1510257272346" expanded="false" signature="3790:4358" ph="{...}" />
-            <marker date="1510257272346" expanded="false" signature="4453:4814" ph="{...}" />
-            <marker date="1510257272346" expanded="false" signature="4871:5177" ph="{...}" />
-            <marker date="1510257272346" expanded="false" signature="5233:5539" ph="{...}" />
-            <marker date="1510257272346" expanded="false" signature="5592:5896" ph="{...}" />
-            <marker date="1510257272346" expanded="false" signature="5953:6255" ph="{...}" />
-            <marker date="1510257272346" expanded="false" signature="6310:6612" ph="{...}" />
-            <marker date="1510257272346" expanded="false" signature="6666:6964" ph="{...}" />
-          </folding>
+        <state relative-caret-position="40">
+          <caret line="2" column="56" lean-forward="true" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
